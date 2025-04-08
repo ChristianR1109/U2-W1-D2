@@ -115,7 +115,7 @@ section h2 {
   background-color: #a3a3a3;
   padding: 0px 1em;
   position: absolute;
-  top: -15px;
+  top: -11%;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -129,15 +129,17 @@ h1 {
   position: relative;
   display: inline-block;
 }
-.box1 {
-  position: inherit;
-}
-
-.box1 img {
+h1 span {
   position: relative;
-  bottom: 0.5em;
+  z-index: 0;
 }
-
+span img {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+}
 p,
 address,
 ul,
@@ -359,6 +361,17 @@ footer {
 
 footer a {
   color: fuchsia;
+}
+.toTop .far,
+.social .far {
+  background: #ffffffa1;
+  backdrop-filter: blur(2px);
+  line-height: 0.8;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  padding: 16px;
+  border: 3px solid white;
+  right: 0;
 }
 
 @media screen and (min-width: 1200px) {
